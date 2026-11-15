@@ -1,0 +1,20 @@
+{
+  "name": "n8n-hubspot-lead-timezone-dispatch-validator",
+  "version": "1.0.0",
+  "description": "n8n workflow + Node.js mirror that resolves a lead's local timezone from HubSpot, phone country code or IP, checks local calling/emailing windows, and delays dispatch with an n8n Wait node until the window opens. DRY_RUN and SANDBOX_MODE by default.",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "simulate": "node src/index.js --simulate",
+    "run-queue": "node src/index.js --run-queue",
+    "test": "node --test tests/timezone.test.js",
+    "build:workflow": "node scripts/build-workflow.js"
+  },
+  "engines": { "node": ">=20.0.0" },
+  "dependencies": {},
+  "keywords": ["n8n", "hubspot", "timezone", "business-hours", "outbound", "compliance", "revops"],
+  "author": { "name": "DH Robin | dhRobin Systems", "url": "https://dhrobinsystems.com" },
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/dhrobinsystems/n8n-hubspot-lead-timezone-dispatch-validator.git" }
+}
