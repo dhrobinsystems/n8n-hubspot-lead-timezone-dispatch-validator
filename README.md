@@ -35,6 +35,8 @@ Out of the box nothing is written or sent: `DRY_RUN=true`, `SANDBOX_MODE=true`, 
 
 ## Architecture overview
 
+![n8n Workflow Overview](assets/n8n-workflow-overview.png)
+
 ```
  Lead source (HubSpot workflow webhook, form handler, enrichment tool)
         │ POST /webhook/lead-timezone-dispatch   x-webhook-secret: …
